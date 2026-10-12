@@ -1,0 +1,31 @@
+# ============================================================
+# 凭据数据 —— 永远不要提交！
+# 真库默认在 C:\Users\<你>\.keybox\ ，本来就不在仓库里；
+# 但万一有人把 KEYBOX_HOME 指到仓库目录，这几行能兜住。
+# ============================================================
+.keybox/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+audit.log
+
+# 用来批量导入的凭据表
+keys*.csv
+*凭据*.csv
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

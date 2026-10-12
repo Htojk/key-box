@@ -1,0 +1,6 @@
+# 源码统一用 LF，别人在 Linux/Mac 上 clone 下来不会有 ^M
+* text=auto eol=lf
+
+# Windows 批处理保留 CRLF（cmd.exe 对 LF-only 的 .cmd 在某些分支上有毛病）
+*.cmd text eol=crlf
+*.bat text eol=crlf
